@@ -1,0 +1,135 @@
+*[data-theme="light"] {
+  transition: 0.3s;
+}
+
+body[data-theme="light"] {
+  background: white;
+}
+
+[data-theme="light"] {
+  & .navbar {
+    background-color: white;
+  }
+
+  & .navbar-dark .navbar-nav .nav-link,
+  .custom-control-label,
+  .beat-detail,
+  .beat_horizontal-detail,
+  .artist-detail,
+  .popular-music-detail,
+  .popular-music-content-list i ,
+  .see_all a ,
+  .see_all ,
+  .rhyme-text ,
+  .rhyme-body i ,
+  .number {
+    color: black;
+  }
+
+  & .navbar-dark .navbar-toggler  {
+    color: black;
+    border-color: black;
+  }
+
+  & .navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  & #banner {
+    background-color: var(--navbar-color);
+  }
+
+  & .topbeat_Creator, .lasted_music
+  .artist-creator ,
+  .thread ,
+  .rhyme-body{
+    background-color: #ebebeb;
+  }
+
+  & footer {
+      background: #474747;
+      color: white;
+  }
+  
+  // CREATOR
+  & .make_beat  {
+    background-color: #DBDBDB;
+  }
+
+  &  .cover-number {
+    background-color: #2E2E2E;
+  }
+
+  & .rhyme_generator , .upload {
+    background-color: #EBEBEB;
+  }
+
+  & .rhyme-word , .rhyme-mean , .follower , .listener {
+    color: black;
+  }
+
+  & .beat_horizontal-detail span {
+    color: #A2A2A2;
+  }
+
+  & h5 {
+    color: #2FF488;
+  }
+
+
+  & .rhyme-block , .upload__input , .upload__input-image {
+    background-color: white;
+  }
+
+  & .upload__input label strong , .upload__input-image label:nth-child(1) {
+    color: #9F9F9F;
+  }
+
+  & .upload__input-image , .upload__input {
+    border-color: black;
+    outline : 2px dashed black;
+  }
+
+  & .navbar{
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+  }
+  & .inputfile + label {
+    background-color: #EBEBEB;
+  }
+
+  & .block_beat div {
+    background-color: #ADADAD;
+  }
+
+  & .top_creator{
+    background-color: #FCFCFC;
+  }
+
+  & #numberbar-1 , #numberbar-2 , #numberbar-3 , #numberbar-4 ,
+  #numberbar-5 , #numberbar-6 , #numberbar-7 , #numberbar-8  {
+    color: #2FF488;
+  }
+
+  & .number {
+    color: white ;
+  }
+
+  & .block_beat div:nth-child(1){
+    background-color: #535353 !important;
+  }
+
+
+  // CONTACT
+  & .contact-text , #type label , #group1 label , #group2 label{
+    color: black;
+  }
+
+  & .container #contact , .banner-footer {
+    background-color: #F5F5F5;
+  }
+
+  & .contact-form{
+    background-color: #EBEBEB;
+  }
+
+}

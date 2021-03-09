@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightmode.css">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:400,500,700&display=swap" rel="stylesheet">
+    <title>Creator</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-creator">
+                <a class="navbar-brand creator" href="index.html"><img src="images/logo-darkmode.png" alt=""
+                        class="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Community</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="creator.html">Creator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="custom-control custom-switch btn-switch">
+                            <input type="checkbox" class="custom-control-input" id="darkSwitch">
+                            <label class="custom-control-label" for="darkSwitch" id="btn-darkmode">Dark Mode</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- play block -->
+    <div class="play_block">
+        <div class="play-mobile">
+            <div class="play-btn"><i class="fas fa-play"></i></div>
+            <div class="custom-beat">
+                <p>YOUR CUSTOM BEAT</p><i class="fas fa-chevron-down"></i>
+            </div>
+            <button class="setting" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class="fas fa-cog"></i>
+                <div class="dropdown-menu" id="setting">
+                    <label for="BPM" class="bpm">BPM
+                        <input type="text">
+                    </label>
+                    <div class="clear-btn"></div>
+                </div>
+            </button>
+        </div>
+        <div class="play-desktop">
+            <div class="play-btn"><i class="fas fa-play"></i></div>
+            <div class="bpm">BPM : <input type="text" value="142"></div>
+            <div class="chevron-down"><i class="fas fa-chevron-down"></i></div>
+            <div class="setting-left">
+                <div class="clear-btn"><i class="fas fa-times"></i>CLEAR</div>
+                <div class="save-button"><i class="far fa-save"></i>SAVE</div>
+                <div class="custom-beat">YOUR CUSTOM BEAT<i class="fas fa-chevron-down"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- make beat -->
+    <div class="make_beat">
+        <div class="container-beat">
+            <div class="cover-block">
+                <div class="block-instrument">
+                    <div><img src="images/icon-music/kick.png"></div>
+                    <div><img src="images/icon-music/snare.png"></div>
+                    <div><img src="images/icon-music/closed-hat.png"></div>
+                    <div><img src="images/icon-music/open-hat.png"></div>
+                    <div><img src="images/icon-music/tom.png"></div>
+                    <div><img src="images/icon-music/percussion.png"></div>
+                    <div><img src="images/icon-music/fx.png"></div>
+                    <div><img src="images/icon-music/keys.png"></div>
+                </div>
+                <div class="block_beat" id="bar-1">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat" id="bar-2">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-tablet" id="bar-3">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-tablet">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-tablet">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-tablet">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-tablet" id="bar-4">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-tablet">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-tablet">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-tablet">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-desktop" id="bar-5">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-desktop">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-desktop">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-desktop">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-desktop" id="bar-6">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-desktop">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-desktop">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-desktop">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-desktop" id="bar-7">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-desktop">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-desktop">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-desktop">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-desktop" id="bar-8">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-desktop">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-desktop">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="block_beat beat-desktop">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div> <!-- cover-block -->
+            <div class="number-bar">
+                <div class="plus-block">+</div>
+                <div class="cover-number">
+                    <div class="number" id="numberbar-1">1</div>
+                    <div class="number">2</div>
+                    <div class="number">3</div>
+                    <div class="number">4</div>
+                    <div class="number" id="numberbar-2">5</div>
+                    <div class="number">6</div>
+                    <div class="number">7</div>
+                    <div class="number">8</div>
+                    <div class="number number-tablet" id="numberbar-3">9</div>
+                    <div class="number number-tablet">10</div>
+                    <div class="number number-tablet">11</div>
+                    <div class="number number-tablet">12</div>
+                    <div class="number number-tablet" id="numberbar-4">13</div>
+                    <div class="number number-tablet">14</div>
+                    <div class="number number-tablet">15</div>
+                    <div class="number number-tablet">16</div>
+                    <div class="number number-desktop" id="numberbar-5">17</div>
+                    <div class="number number-desktop">18</div>
+                    <div class="number number-desktop">19</div>
+                    <div class="number number-desktop">20</div>
+                    <div class="number number-desktop" id="numberbar-6">21</div>
+                    <div class="number number-desktop">22</div>
+                    <div class="number number-desktop">23</div>
+                    <div class="number number-desktop">24</div>
+                    <div class="number number-desktop" id="numberbar-7">25</div>
+                    <div class="number number-desktop">26</div>
+                    <div class="number number-desktop">27</div>
+                    <div class="number number-desktop">28</div>
+                    <div class="number number-desktop" id="numberbar-8">29</div>
+                    <div class="number number-desktop">30</div>
+                    <div class="number number-desktop">31</div>
+                    <div class="number number-desktop">32</div>
+
+                </div>
+            </div> <!-- number-bar -->
+            <div class="pagination">
+
+            </div>
+        </div>
+    </div>
+
+    <section class="rhyme_generator">
+        <div class="container-beat">
+            <div class="header">
+                <h2>RHYME Generator</h2>
+                <div class="see_all">
+                    <a href="#">ดูทั้งหมด</a><i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <form class="form-inline">
+                <div class="col" id="rhyme">
+                    <input type="text" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary" id="search">Search</button>
+            </form>
+
+            <div class="row">
+                <div class="col">
+                    <div class="rhyme-block">
+                        <div class="rhyme-word">
+                            <span>แดน</span> | N | land
+                        </div>
+                        <div class="rhyme-mean">
+                            ที่ที่กำหนดไว้โดยตรงหรือโดยหมายรู้กัน
+                        </div>
+                    </div>
+                    <div class="rhyme-block">
+                        <div class="rhyme-word">
+                            <span>แกน</span> | N | axle
+                        </div>
+                        <div class="rhyme-mean">
+                            วัตถุแข็งที่อยู่ตรงกลางของสิ่งอื่นสำหรับยึดให้อยู่
+                        </div>
+                    </div>
+                    <div class="rhyme-block">
+                        <div class="rhyme-word">
+                            <span>แกน</span> | ADJ | axle
+                        </div>
+                        <div class="rhyme-mean">
+                            แข็งเป็นไตอยู่ข้างใน (มักใช้แก่ผลไม้)
+                            เช่น ทุเรียนแกน มะม่วงแกน
+                        </div>
+                    </div>
+                    <div class="rhyme-tablet">
+                        <div class="rhyme-block">
+                            <div class="rhyme-word">
+                                <span>แคน</span> | N | a kind of reed mouth organ in
+                            </div>
+                            <div class="rhyme-mean">
+                                เครื่องดนตรีทางถิ่นอีสาน ทำด้วยไม้ซางผูกเรียงต่อกับเต้าแคนสำหรับเป่าเป็นเพลง
+                            </div>
+                        </div>
+                        <div class="rhyme-block">
+                            <div class="rhyme-word">
+                                <span>แบน</span> | ADJ | flat
+                            </div>
+                            <div class="rhyme-mean">
+                                แฟบ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="rhyme-desktop">
+                    <div class="rhyme-block">
+                        <div class="rhyme-word">
+                            <span>แปร</span> | V | change
+                        </div>
+                        <div class="rhyme-mean">
+                            เปลี่ยนกลายไปจากลักษณะหรือภาวะเดิม
+                        </div>
+                    </div>
+                    <div class="rhyme-block">
+                        <div class="rhyme-word">
+                            <span>แพน</span> | N | tail
+                        </div>
+                        <div class="rhyme-mean">
+                            หางนกบางชนิดที่แผ่ออกไปเป็นแผ่น
+                        </div>
+                    </div>
+                    <div class="rhyme-block">
+                        <div class="rhyme-word">
+                            <span>แพน</span> | V | spread
+                        </div>
+                        <div class="rhyme-mean">
+                            แผ่ออก, กระจายออก
+                        </div>
+                    </div>
+                    <div class="rhyme-block">
+                        <div class="rhyme-word">
+                            <span>แฟน</span> | N | fan
+                        </div>
+                        <div class="rhyme-mean">
+                            ผู้นิยมชมชอบในสิ่งใดสิ่งหนึ่ง เช่น ฟุตบอล ภาพยนตร์ ดารานักร้อง
+                        </div>
+                    </div>
+                    <div class="rhyme-block">
+                        <div class="rhyme-word">
+                            <span>แฟน</span> | N | sweetheart
+                        </div>
+                        <div class="rhyme-mean">
+                            หญิงชายที่รักกันในเชิงชู้สาว
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="top_creator">
+        <div class="container-beat">
+            <div class="header" id="creator">
+                <h2>TOP Creator</h2>
+                <div class="see_all">
+                    <a href="#">ดูทั้งหมด</a><i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="top_creator-mobile">
+                <div class="creator-vertical">
+                    <div class="block-creator">
+                        <div class="creator-image"><img src="images/creator_profile/1.jpg" alt=""></div>
+                        <div class="creator-detail">
+                            <h5>CosmoZ</h5>
+                            <div class="follower">ผู้ติดตาม 243.2 K</div>
+                            <div class="listener">ยอดผู้ฟัง 463 M</div>
+                        </div>
+                    </div>
+                    <div class="block-creator">
+                        <div class="creator-image"><img src="images/creator_profile/2.jpg" alt=""></div>
+                        <div class="creator-detail">
+                            <h5>GGHanoi</h5>
+                            <div class="follower">ผู้ติดตาม 120.4 K</div>
+                            <div class="listener">ยอดผู้ฟัง 223 M</div>
+                        </div>
+                    </div>
+                    <div class="block-creator">
+                        <div class="creator-image"><img src="images/creator_profile/3.jpg" alt=""></div>
+                        <div class="creator-detail">
+                            <h5>ฮู้วคล่อง มาไว</h5>
+                            <div class="follower">ผู้ติดตาม 100.8 K</div>
+                            <div class="listener">ยอดผู้ฟัง 153 M</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top_creator-tabletUP">
+
+                <div class="popular-profile">
+                    <div class="creator-image" id="popular"><img src="images/creator_profile/1.jpg" alt=""></div>
+                    <div class="creator-detailP">
+                        <h5>CosmoZ</h5>
+                        <div class="follower">ผู้ติดตาม 243.2 K</div>
+                        <div class="listener">ยอดผู้ฟัง 463 M</div>
+                    </div>
+                </div>
+
+                <div class="creator-vertical">
+                    <div class="block-creator">
+                        <div class="creator-image"><img src="images/creator_profile/2.jpg" alt=""></div>
+                        <div class="creator-detail">
+                            <h5>GGHanoi</h5>
+                            <div class="follower">ผู้ติดตาม 120.4 K</div>
+                            <div class="listener">ยอดผู้ฟัง 223 M</div>
+                        </div>
+                    </div>
+                    <div class="block-creator">
+                        <div class="creator-image"><img src="images/creator_profile/3.jpg" alt=""></div>
+                        <div class="creator-detail">
+                            <h5>ฮู้วคล่อง มาไว</h5>
+                            <div class="follower">ผู้ติดตาม 100.8 K</div>
+                            <div class="listener">ยอดผู้ฟัง 153 M</div>
+                        </div>
+                    </div>
+                    <div class="block-creator">
+                        <div class="creator-image"><img src="images/creator_profile/4.jpg" alt=""></div>
+                        <div class="creator-detail">
+                            <h5>ไข่ต้ม</h5>
+                            <div class="follower">ผู้ติดตาม 100.4 K</div>
+                            <div class="listener">ยอดผู้ฟัง 153 M</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="creator-vertical" id="desktop">
+                    <div class="block-creator">
+                        <div class="creator-image"><img src="images/creator_profile/2.jpg" alt=""></div>
+                        <div class="creator-detail">
+                            <h5>GGHanoi</h5>
+                            <div class="follower">ผู้ติดตาม 120.4 K</div>
+                            <div class="listener">ยอดผู้ฟัง 223 M</div>
+                        </div>
+                    </div>
+                    <div class="block-creator">
+                        <div class="creator-image"><img src="images/creator_profile/3.jpg" alt=""></div>
+                        <div class="creator-detail">
+                            <h5>ฮู้วคล่อง มาไว</h5>
+                            <div class="follower">ผู้ติดตาม 100.8 K</div>
+                            <div class="listener">ยอดผู้ฟัง 153 M</div>
+                        </div>
+                    </div>
+                    <div class="block-creator">
+                        <div class="creator-image"><img src="images/creator_profile/4.jpg" alt=""></div>
+                        <div class="creator-detail">
+                            <h5>ไข่ต้ม</h5>
+                            <div class="follower">ผู้ติดตาม 100.4 K</div>
+                            <div class="listener">ยอดผู้ฟัง 153 M</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="upload">
+        <div class="container-beat">
+            <div class="header" id="creator">
+                <h2>Upload</h2>
+            </div>
+            <div class="row">
+                <div class="col" id="upload">
+                    <div class="upload__input-image">
+                        <div class="upload__input-file">
+                            <label for="">รูปปกเพลง</label>
+                            <input type="file" class="inputfile">
+                            <label for="file">Browse</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <form class="upload__box" method="post" action="" enctype="multipart/form-data">
+                        <div class="upload__input">
+                            <input class="upload__file" type="file" name="files[]" id="file"
+                                data-multiple-caption="{count} files selected" multiple />
+                            <label for="file"><strong>Drag your files here</strong><span class="box__orclick"> or
+                                    click</span></label>
+                        </div>
+                        <div class="upload__cover">
+                            <input type="text" class="form-control" placeholder="รูปปกเพลง">
+                        </div>
+                        <div class="upload__name">
+                            <input type="text" class="form-control" placeholder="ชื่อเพลง">
+                        </div>
+                        <div class="upload__description">
+                            <input type="text" class="form-control" placeholder="อธิบาย">
+                        </div>
+                        <button class="btn btn-primary upload__btn" type="submit">Upload</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="lasted_music-creator">
+        <div class="container-creator">
+            <div class="header">
+                <h2>BEAT</h2>
+                <div class="see_all">
+                    <a href="#">ดูทั้งหมด</a><i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-creator">
+            <div class="square-content">
+                <div class="beat_horizontal">
+                    <img src="images/user_beat/1.jpg" alt="" class="beat_horizontal-img">
+                    <div class="beat_horizontal-detail">
+                        BOSSA Beat
+                        <span>4.5<i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="beat_horizontal">
+                    <img src="images/user_beat/2.jpg" alt="" class="beat_horizontal-img">
+                    <div class="beat_horizontal-detail">
+                        RAYMAN Beat
+                        <span>4.5<i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="beat_horizontal">
+                    <img src="images/user_beat/3.jpg" alt="" class="beat_horizontal-img">
+                    <div class="beat_horizontal-detail">
+                        NICO BEAT
+                        <span>4.5<i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="beat_horizontal">
+                    <img src="images/user_beat/4.jpg" alt="" class="beat_horizontal-img">
+                    <div class="beat_horizontal-detail">
+                        Final beat
+                        <span>4.5<i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="beat_horizontal">
+                    <img src="images/user_beat/5.jpg" alt="" class="beat_horizontal-img">
+                    <div class="beat_horizontal-detail">
+                        ICE Berg
+                        <span>4.5<i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="beat_horizontal">
+                    <img src="images/user_beat/6.jpg" alt="" class="beat_horizontal-img">
+                    <div class="beat_horizontal-detail">
+                        Disaster
+                        <span>4.5<i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p class="text-footer">Copyright &copy; YoWhatsUp. All Rights Reserved</p>
+    </footer>
+
+
+
+    <script src="js/dark-mode-switch.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- <script>
+        
+            reportWindowSize()
+            window.addEventListener('resize',reportWindowSize)
+    
+            function reportWindowSize() {
+                x = window.innerWidth;
+                if (x >= 768 && x < 1020) {
+                    var p = document.getElementsByClassName("container-creator")[0];
+                    var style = p.currentStyle || window.getComputedStyle(p);
+                    myString = style.marginLeft.replace(/[a-zA-Z]/g,'');
+                    document.getElementsByClassName("square-content")[0].style.paddingLeft =(Number(myString) + 15) + 'px'
+                }
+            }
+    
+    
+    
+        </script> -->
+</body>
+
+</html>

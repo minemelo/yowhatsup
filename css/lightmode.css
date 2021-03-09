@@ -1,0 +1,107 @@
+*[data-theme=light] {
+  transition: 0.3s;
+}
+
+body[data-theme=light] {
+  background: white;
+}
+
+[data-theme=light] .navbar {
+  background-color: white;
+}
+[data-theme=light] .navbar-dark .navbar-nav .nav-link,
+[data-theme=light] .custom-control-label,
+[data-theme=light] .beat-detail,
+[data-theme=light] .beat_horizontal-detail,
+[data-theme=light] .artist-detail,
+[data-theme=light] .popular-music-detail,
+[data-theme=light] .popular-music-content-list i,
+[data-theme=light] .see_all a,
+[data-theme=light] .see_all,
+[data-theme=light] .rhyme-text,
+[data-theme=light] .rhyme-body i,
+[data-theme=light] .number {
+  color: black;
+}
+[data-theme=light] .navbar-dark .navbar-toggler {
+  color: black;
+  border-color: black;
+}
+[data-theme=light] .navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+[data-theme=light] #banner {
+  background-color: var(--navbar-color);
+}
+[data-theme=light] .lasted_music,
+[data-theme=light] .topbeat_Creator,
+[data-theme=light] .artist-creator,
+[data-theme=light] .thread,
+[data-theme=light] .rhyme-body {
+  background-color: #ebebeb;
+}
+[data-theme=light] footer {
+  background: #474747;
+  color: white;
+}
+[data-theme=light] .make_beat {
+  background-color: #DBDBDB;
+}
+[data-theme=light] .cover-number {
+  background-color: #2E2E2E;
+}
+[data-theme=light] .rhyme_generator, [data-theme=light] .upload {
+  background-color: #EBEBEB;
+}
+[data-theme=light] .rhyme-word, [data-theme=light] .rhyme-mean, [data-theme=light] .follower, [data-theme=light] .listener {
+  color: black;
+}
+[data-theme=light] .beat_horizontal-detail span {
+  color: #A2A2A2;
+}
+[data-theme=light] h5 {
+  color: #2FF488;
+}
+[data-theme=light] .rhyme-block, [data-theme=light] .upload__input, [data-theme=light] .upload__input-image {
+  background-color: white;
+}
+[data-theme=light] .upload__input label strong, [data-theme=light] .upload__input-image label:nth-child(1) {
+  color: #9F9F9F;
+}
+[data-theme=light] .upload__input-image, [data-theme=light] .upload__input {
+  border-color: black;
+  outline: 2px dashed black;
+}
+[data-theme=light] .navbar {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+[data-theme=light] .inputfile + label {
+  background-color: #EBEBEB;
+}
+[data-theme=light] .block_beat div {
+  background-color: #ADADAD;
+}
+[data-theme=light] .top_creator {
+  background-color: #FCFCFC;
+}
+[data-theme=light] #numberbar-1, [data-theme=light] #numberbar-2, [data-theme=light] #numberbar-3, [data-theme=light] #numberbar-4,
+[data-theme=light] #numberbar-5, [data-theme=light] #numberbar-6, [data-theme=light] #numberbar-7, [data-theme=light] #numberbar-8 {
+  color: #2FF488;
+}
+[data-theme=light] .number {
+  color: white;
+}
+[data-theme=light] .block_beat div:nth-child(1) {
+  background-color: #535353 !important;
+}
+[data-theme=light] .contact-text, [data-theme=light] #type label, [data-theme=light] #group1 label, [data-theme=light] #group2 label {
+  color: black;
+}
+[data-theme=light] .container #contact, [data-theme=light] .banner-footer {
+  background-color: #F5F5F5;
+}
+[data-theme=light] .contact-form {
+  background-color: #EBEBEB;
+}
+
+/*# sourceMappingURL=lightmode.css.map */
